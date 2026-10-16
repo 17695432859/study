@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>初中物理·化学实验库</title>
+<meta name="description" content="初中物理与化学全部实验：器材、步骤、现象、结论，可勾选、可搜索、可自测。">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="#/">
+    <span class="brand-mark">⚗</span>
+    <span>初中物理·化学实验库</span>
+  </a>
+  <div class="topbar-tools">
+    <input id="search" type="search" placeholder="搜索实验 / 器材 / 现象…" autocomplete="off">
+    <button id="theme" class="icon-btn" title="切换深色/浅色" aria-label="切换主题">◐</button>
+  </div>
+</header>
+
+<nav class="tabs" id="tabs"></nav>
+
+<main id="view" class="view"><div class="empty">加载中…</div></main>
+
+<footer class="foot">
+  <span id="stats"></span>
+  <span class="sep">·</span>
+  <button id="reset" class="link-btn">清空我的进度</button>
+  <span class="sep">·</span>
+  <span>内容供复习参考，实验操作以教材与老师要求为准</span>
+</footer>
+
+<script src="data/physics.js"></script>
+<script src="data/chemistry.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
